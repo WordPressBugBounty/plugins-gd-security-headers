@@ -2,7 +2,7 @@
 
 /*
 Name:    d4pLib_WP_Functions
-Version: v2.8.17
+Version: v2.8.20
 Author:  Milan Petrovic
 Email:   support@dev4press.com
 Website: https://www.dev4press.com/
@@ -352,11 +352,7 @@ if (!function_exists('d4p_permalinks_enabled')) {
 
 if (!function_exists('d4p_json_encode')) {
     function d4p_json_encode($data, $options = 0, $depth = 512) {
-        if (function_exists('wp_json_encode') ) {
-            return wp_json_encode($data, $options, $depth);
-        } else {
-            return wp_json_encode($data, $options, $depth);
-        }
+	    return wp_json_encode($data, $options, $depth);
     }
 }
 

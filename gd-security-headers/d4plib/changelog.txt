@@ -1,6 +1,16 @@
 === Dev4Press Library ===
 == Changelog ==
 
+= Version 2.8.20 - 2024.12.03 =
+* Edit: improved sanitization of the HTML classes
+
+= Version 2.8.19 - 2024.11.15 =
+* Edit: proper sanitization of the HTML classes
+* Fix: authenticated stored cross-site scripting vulnerability
+
+= Version 2.8.18 - 2024.06.07 =
+* Edit: removed translations MO files
+
 = Version 2.8.17 - 2024.05.08 =
 * Edit: function `json_encode` replaced with `wp_json_encode`
 * Fixed: minor issue with query log in WPDB wrapper class

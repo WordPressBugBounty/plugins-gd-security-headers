@@ -2,7 +2,7 @@
 
 /*
 Name:    d4pLib_Functions
-Version: v2.8.17
+Version: v2.8.20
 Author:  Milan Petrovic
 Email:   support@dev4press.com
 Website: https://www.dev4press.com/
@@ -368,7 +368,7 @@ if (!function_exists('d4p_render_icon')) {
         $extra = $fw ? 'fw' : '';
         $classes = d4p_get_icon_class($name, $extra).' '.$class;
 
-        $icon.= ' class="'.trim($classes).'"';
+        $icon.= ' class="'.d4p_sanitize_html_classes(trim($classes)).'"';
 
         foreach ($attr as $key => $value) {
             $icon.= ' '.$key.'="'.esc_attr($value).'"';
